@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco-Friendly Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Eco-Friendly Travel</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#calculator">Carbon Calculator</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      We promote sustainable travel solutions to reduce carbon emissions and encourage eco-friendly habits.
+    </p>
+  </section>
+
+  <section id="services" class="features">
+    <h2>Our Eco-Friendly Services</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <h3>E-Bike Rentals</h3>
+        <p>Rent electric bikes to minimize your carbon footprint.</p>
+      </div>
+      <div class="service-box">
+        <h3>Eco-Gear Rentals</h3>
+        <p>Reusable and sustainable travel gear for environmentally conscious travelers.</p>
+      </div>
+      <div class="service-box">
+        <h3>Sustainable Travel Tips</h3>
+        <p>Learn how to travel greener and reduce your environmental impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculator" class="calculator">
+    <h2>Carbon Footprint Calculator</h2>
+    <div class="calculator-container">
+      <label for="distance">Distance Traveled (in km):</label>
+      <input type="number" id="distance" placeholder="Enter distance" required>
+      
+      <label for="transport">Mode of Transport:</label>
+      <select id="transport">
+        <option value="" disabled selected>Select Transport</option>
+        <option value="car">Car</option>
+        <option value="bike">Electric Bike</option>
+        <option value="public">Public Transport</option>
+      </select>
+      
+      <button onclick="calculateCarbonFootprint()">Calculate</button>
+      <p id="result"></p>
+    </div>
+  </section>
+
+  <section id="feedback" class="feedback-section">
+    <h2>We Value Your Feedback</h2>
+    <form id="feedback-form">
+      <textarea placeholder="Your feedback..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="thank-you-message" style="display: none;">Thank you for your feedback!</p>
+  </section>
+
+  <footer class="footer">
+    <p>Eco-Friendly Travel | Promoting Sustainable Travel Choices</p>
+  </footer>
+</body>
+</html>
